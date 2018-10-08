@@ -1,0 +1,7 @@
+organization=pmkramer-github
+projectKey=pmkramer_testSolarTravis
+serverUrl=https://sonarcloud.io
+serverVersion=7.4.0.17856
+dashboardUrl=https://sonarcloud.io/dashboard?id=pmkramer_testSolarTravis
+ceTaskId=AWZVDO-lMw52PrQC0UOI
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWZVDO-lMw52PrQC0UOI
