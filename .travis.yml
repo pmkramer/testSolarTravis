@@ -2,8 +2,8 @@ language: java
 dist: trusty
 addons:
   sonarcloud:
-    organization: "pmkramer_testSolarTravis" # the key of the org you chose at step #3
+    organization: "pmkramer-github" 
       token:
         secure:  "RCWz7x6PiduJz29sBwWzVUjAPJJUmUrvZZOiitFYLuIEVhQ6nnpdNFxvxG14xb2d2f4XGcxaeFKdVOe6uLwl5seHOLmWtM90mElbO73YoVsssYnG7jubieAd8RjyM1sbA9xJNiz1eRAa92mCLDolLyI61Vsy8ma91brTg44XaGwUfdLUB4PjziacRiEHpZU9evIR22oqVL6Cpm54gzjm0Kj20gVLytNDGBIAsRjMs7wilcb+J29oFKobRtYrWDT90exsZIbieHYKzmC+DqUNjhsLAoAl2tki7dy6z4K3sALH57Dw4ahgHs5plkD0aVTmJF9pD1HP/+IZYG5h65FepDVtRnRCQER6GmR36Uw4qQQnhVKweW83kstLb2emloWjWnZT10SK86xqABqzNQmubJz3qKFWVnyrHgfmbOKVfAx5NlK/GSXYYuvIqgD3kksVBFneOj2vmdB1PykiIC8HD8m8IMCLU1IciVS6Yc7InBH9Y5oLbv0FKSEqEsuxLX3xbd6LQXeBpmNinmH+edC2SGykSzwrQR7qVNdDkebDh7GzNGLIybFY2lP9e8uWgYXVeusKltYwCCD/t9gAUu/62CWY+FGgegRSuMHiBwGL2rosk8mCgyLne+/YPabMRP2s0c37kAKDyiSEE+i/VX5HQQCrZNY8lPrZB5h+SWTwDS4="
-      script:
-          - sonar-scanner
+script:
+ - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
